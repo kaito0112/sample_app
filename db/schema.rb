@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_30_043157) do
+ActiveRecord::Schema.define(version: 2023_02_01_043629) do
 
   create_table "lists", force: :cascade do |t|
     t.string "title"
-    t.string "bo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "body"
   end
 
 end
